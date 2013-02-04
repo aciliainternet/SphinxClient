@@ -850,7 +850,7 @@ class SphinxClient
 		assert ( is_numeric($max) );
 		assert ( $min<=$max );
 
-		$this->_filters[] = array ( "type"=>SPH_FILTER_RANGE, "attr"=>$attribute, "exclude"=>$exclude, "min"=>$min, "max"=>$max );
+		$this->_filters[] = array ( "type"=>self::SPH_FILTER_RANGE, "attr"=>$attribute, "exclude"=>$exclude, "min"=>$min, "max"=>$max );
 	}
 
 	/// set float range filter
